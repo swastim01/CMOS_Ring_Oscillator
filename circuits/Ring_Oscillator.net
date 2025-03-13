@@ -1,0 +1,29 @@
+* \\wsl.localhost\Ubuntu\home\swastim01\CMOS_Ring_Oscillator\Ring_Oscillator.asc
+XX1 N002 N003 cmos_symbol
+XX2 N003 N004 cmos_symbol
+XX3 N004 N005 cmos_symbol
+XX4 N005 N006 cmos_symbol
+XX5 N006 N007 cmos_symbol
+XX6 N007 N008 cmos_symbol
+XX7 N008 N009 cmos_symbol
+XX8 N001 N002 cmos_symbol
+XX9 N009 N010 cmos_symbol
+XX10 osc N001 cmos_symbol
+XX11 N010 osc cmos_symbol
+
+* block symbol definitions
+.subckt cmos_symbol IN OUT
+M1 VDD IN OUT VDD P_50n l=50n w=1u
+M2 OUT IN 0 0 N_50n l=50n w=500n
+VDD VDD 0 1
+.include BSIM4_models.txt
+.ends cmos_symbol
+
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\swast\OneDrive\Dokumen\LTspiceXVII\lib\cmp\standard.mos
+.ic v(osc)=1
+.include BSIM4_models.txt
+.tran 2n
+.backanno
+.end
