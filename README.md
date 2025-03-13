@@ -48,13 +48,13 @@ The **CMOS Ring Oscillator** is a fundamental digital circuit composed of an odd
 ## Simulation Images
 
 ### **Ring Oscillator Schematic**
-![Ring Oscillator Circuit](screeonshots/Ring_oscillator_circuit.png)
+![Ring Oscillator Circuit](screenshots/Ring_Oscillator_circuit.png)
 
 ### **CMOS Inverter Schematic**
-![CMOS Inverter Circuit](screeonshots/CMOS_Inverter_Circuit.png)
+![CMOS Inverter Circuit](screenshots/CMOS_Invertor_Circuit.png)
 
 ### **Simulation Output Waveform**
-![Simulation Result](screeonshots/Oscillator_Waveform.png)
+![Simulation Result](screenshots/Oscillator_Waveform.png)
 
 ## How to Run the Simulation
 1. Open **LTSpice**.

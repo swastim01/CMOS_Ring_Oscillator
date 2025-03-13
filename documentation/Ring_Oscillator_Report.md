@@ -46,7 +46,7 @@ Where:
 - **T_p** = Propagation delay per inverter
 
 ### 4.2 Observed Results
-- **Oscillation waveform:** ✅ (Captured in `documentation/Oscillator_Waveform.png`)
+- **Oscillation waveform:** ✅ (Captured in `screenshots/Oscillator_Waveform.png`)
 - **Frequency measured:** ~100 MHz (varies with process parameters)
 - **Propagation delay per inverter:** ~500ps
 
