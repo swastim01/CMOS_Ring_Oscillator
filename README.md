@@ -5,18 +5,32 @@ This repository contains the LTSpice simulation files for a **CMOS Ring Oscillat
 ## Project Structure
 
 ```
-├── BSIM4_models.txt         # Transistor models for simulation
-├── cmos_symbol.asc          # CMOS inverter schematic
-├── cmos_symbol.asy          # CMOS inverter symbol file
-├── Ring_Oscillator.asc      # Ring Oscillator schematic
-├── Ring_Oscillator (netlist)# Netlist for the oscillator
-├── Ring_Oscillator.op       # Operating point analysis results
-├── Ring_Oscillator_Report.pdf # Documentation
-├── images/
-│   ├── simulation_result.png    # Simulation waveform
-│   ├── ring_oscillator_circuit.png # Ring oscillator schematic
-│   ├── cmos_inverter_circuit.png   # CMOS inverter schematic
-└── README.md                # Project documentation
+- circuits
+  - Ring_Oscillator.asc           # LTSpice schematic for the CMOS Ring Oscillator circuit
+  - Ring_Oscillator.net           # Netlist file for the ring oscillator circuit
+  - Ring_Oscillator.raw           # Raw data file generated from the LTSpice simulation
+
+- documentation
+  - Ring_Oscillator_Report.md     # Detailed report of the design process, analysis, and simulation results
+
+- models
+  - BSIM4_models.txt              # BSIM4 model definitions for NMOS and PMOS transistors used in the design
+
+- results
+  - Ring_Oscillator.log           # Log file containing the results from the simulation
+  - Ring_Oscillator.op.raw        # Operating point data file from the simulation
+
+- screenshots
+  - CMOS_Invertor_Circuit.png     # Screenshot of the CMOS inverter schematic
+  - CMOS_ring_oscillator.png      # Screenshot of the full CMOS Ring Oscillator schematic
+  - Oscillator_Waveform.png       # Screenshot of the simulation waveform for the oscillator
+  - Ring_Oscillator_circuit.png  # Another screenshot of the ring oscillator circuit
+
+- symbols
+  - cmos_symbol.asc               # LTSpice symbol for the CMOS inverter
+  - cmos_symbol.asy               # ASCII symbol for the CMOS inverter used in the schematic
+
+- README.md                       # This file
 ```
 
 ## Overview
